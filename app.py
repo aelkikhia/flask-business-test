@@ -2,10 +2,10 @@ from flask import Flask
 from flask_jwt import JWT
 from flask_restful import Api
 
-from section6.src.resources.store import Store, StoreList
-from section6.src.security import authenticate, identity
-from section6.src.resources.user import UserRegister
-from section6.src.resources.item import Item, ItemList
+from resources.store import Store, StoreList
+from security import authenticate, identity
+from resources.user import UserRegister
+from resources.item import Item, ItemList
 
 
 app = Flask(__name__)
@@ -37,6 +37,6 @@ api.add_resource(UserRegister, "/register")
 
 
 if __name__ == '__main__':
-    from section6.src.db import db
+    from db import db
     db.init_app(app)
     app.run(port=5000, debug=True)
