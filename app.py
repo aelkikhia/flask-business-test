@@ -6,6 +6,7 @@ from resources.store import Store, StoreList
 from security import authenticate, identity
 from resources.user import UserRegister
 from resources.item import Item, ItemList
+from resources.Accounts import AccountList
 
 
 app = Flask(__name__)
@@ -21,6 +22,7 @@ api = Api(app)
 
 jwt = JWT(app, authenticate, identity)
 
+api.add_resource(AccountList, "/accounts")
 
 api.add_resource(Item, "/item/<string:name>")
 api.add_resource(ItemList, "/items")
