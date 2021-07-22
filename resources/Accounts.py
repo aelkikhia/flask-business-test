@@ -3,7 +3,7 @@ from flask_restful import Resource
 
 class AccountList(Resource):
 
-    def get(self, name):
+    def get(self):
         accounts_list = [{
             "id": 3891648,
             "account_description": "R5 Checking XXXXXX1014 $184.44",
