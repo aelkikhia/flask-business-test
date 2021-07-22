@@ -51,4 +51,4 @@ class AccountList(Resource):
             }
         ]
 
-        return {'data': [account.json() for account in accounts_list]}
+        return {'data': [account for account in accounts_list]}
