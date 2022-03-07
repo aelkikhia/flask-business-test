@@ -40,6 +40,14 @@ class AccountList(Resource):
             "is_external": False,
             "is_active": False
             },
+            "id": 3463656,
+            "account_description": "R5 Checking XXXXXX2345 $545.23",
+            "display_order": 3,
+            "balance": "$545.23",
+            "raw_balance": 545.23,
+            "is_external": True,
+            "is_active": True,
+            },
             {
             "id": 3846281,
             "account_description": "UMB Access Checking XXXXXX9786 $0.00",
@@ -48,7 +56,15 @@ class AccountList(Resource):
             "raw_balance": 0.0,
             "is_external": True,
             "is_active": False
-            }
+            },
+            "id": 7685678,
+            "account_description": "R5 Checking XXXXXX1014 $23455.12",
+            "display_order": 4,
+            "balance": "$23455.12",
+            "raw_balance": 23455.12,
+            "is_external": True,
+            "is_active": True,
+            },
         ]
 
         return {'data': [account for account in accounts_list]}
