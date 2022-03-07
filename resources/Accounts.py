@@ -40,6 +40,7 @@ class AccountList(Resource):
             "is_external": False,
             "is_active": False
             },
+            {
             "id": 3463656,
             "account_description": "R5 Checking XXXXXX2345 $545.23",
             "display_order": 3,
@@ -57,6 +58,7 @@ class AccountList(Resource):
             "is_external": True,
             "is_active": False
             },
+            {
             "id": 7685678,
             "account_description": "R5 Checking XXXXXX1014 $23455.12",
             "display_order": 4,
